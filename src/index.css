@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-radius: 0px !important;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Work Sans', -apple-system, 'Segoe UI', Helvetica, sans-serif;
+    background-color: #FAFAFA;
+    color: #0A0A0A;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Archivo Black', Impact, 'Arial Black', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'Space Mono', 'Courier New', Consolas, monospace;
+  }
+}
+
+@layer components {
+  /* Custom VoiceBox styles */
+  .editorial-border {
+    border: 2px solid #0A0A0A;
+  }
+
+  .editorial-card {
+    background: #FAFAFA;
+    border: 2px solid #E5E5E5;
+    transition: border-color 0.15s ease-in-out;
+  }
+
+  .editorial-card:hover {
+    border-color: #0A0A0A;
+  }
+
+  .editorial-card-elevated {
+    background: #FAFAFA;
+    border-top: 4px solid #EF4444;
+    border-left: 2px solid #E5E5E5;
+    border-right: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+  }
+
+  .editorial-button-primary {
+    background-color: #0A0A0A;
+    color: #FAFAFA;
+    border: 2px solid #0A0A0A;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 10px 24px;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .editorial-button-primary:hover {
+    background-color: #EF4444;
+    border-color: #EF4444;
+    color: #FAFAFA;
+  }
+
+  .editorial-button-secondary {
+    background-color: transparent;
+    color: #0A0A0A;
+    border: 2px solid #0A0A0A;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 10px 24px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .editorial-button-secondary:hover {
+    background-color: #0A0A0A;
+    color: #FAFAFA;
+  }
+
+  .editorial-input {
+    background-color: #FAFAFA;
+    border: 2px solid #D4D4D4;
+    color: #0A0A0A;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    padding: 8px 14px;
+    height: 44px;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+
+  .editorial-input:focus {
+    border-color: #0A0A0A;
+    box-shadow: 0 0 0 2px #FAFAFA, 0 0 0 4px #0A0A0A;
+  }
+
+  .pull-quote {
+    border-left: 4px solid #EF4444;
+    padding-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+    color: #0A0A0A;
+    line-height: 1.65;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+  border-left: 1px solid #E5E5E5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EF4444;
+}

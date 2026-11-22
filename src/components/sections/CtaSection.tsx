@@ -1,16 +1,8 @@
-﻿import React from 'react';
-import { useShop } from '../../context/ShopContext';
-import { FaArrowRight, FaWhatsapp, FaFileInvoiceDollar, FaCube } from 'react-icons/fa';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaArrowRight, FaWhatsapp, FaFileInvoiceDollar } from 'react-icons/fa';
 
 export const CtaSection: React.FC = () => {
-  const { openModal } = useShop();
-
-  const scrollToCatalog = () => {
-    const el = document.getElementById('katalog');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="border-b-4 border-[#0A0A0A] bg-[#0A0A0A] text-[#FAFAFA] py-20 md:py-28 relative overflow-hidden">
       
@@ -43,13 +35,13 @@ export const CtaSection: React.FC = () => {
             <FaArrowRight />
           </Link>
 
-          <button
-            onClick={() => openModal('customFurniture')}
+          <Link
+            to="/custom"
             className="bg-transparent text-[#FAFAFA] hover:bg-[#FAFAFA] hover:text-[#0A0A0A] px-8 py-4 text-sm font-bold uppercase tracking-wider transition-colors border-2 border-[#FAFAFA] flex items-center gap-2"
           >
             <FaFileInvoiceDollar />
             <span>Form Custom Order</span>
-          </button>
+          </Link>
 
           <a
             href="https://wa.me/6282313153539?text=Halo%20PorosKayu%2C%20saya%20ingin%20konsultasi%20pemesanan%20furniture%20custom"
@@ -64,7 +56,7 @@ export const CtaSection: React.FC = () => {
 
         {/* Small Editorial Note */}
         <div className="pt-6 text-xs font-mono text-[#737373]">
-          Nomor Resmi WhatsApp: +62 823-1315-3539 • Jam Kerja Konsultasi: 08:30 - 18:00 WIB
+          Nomor Resmi WhatsApp: +62 823-1315-3539 • Jam Kerja Konsultasi: 08:00 - 17:30 WIB
         </div>
 
       </div>

@@ -1,3 +1,4 @@
+import { assetUrl } from '../utils/asset';
 import { Product } from '../types';
 
 export const PRODUCTS: Product[] = [
@@ -24,11 +25,11 @@ export const PRODUCTS: Product[] = [
       { name: 'Charcoal Noir', hex: '#262626' },
       { name: 'Warm Terracotta', hex: '#B85D43' }
     ],
-    image: '/images/prod-nordic-chair.jpg',
+    image: assetUrl('/images/prod-nordic-chair.jpg'),
     gallery: [
-      '/images/prod-nordic-chair.jpg',
-      '/images/cat-kursi.jpg',
-      '/images/hero-furniture.jpg'
+      assetUrl('/images/prod-nordic-chair.jpg'),
+      assetUrl('/images/cat-kursi.jpg'),
+      assetUrl('/images/hero-furniture.jpg')
     ],
     description: 'Armchair bergaya Nordic dengan kurva ergonomis yang menopang punggung secara anatomis. Rangka terbuat dari kayu jati solid pilihan oven-dry yang tahan kelembaban seumur hidup.',
     features: [
@@ -64,11 +65,11 @@ export const PRODUCTS: Product[] = [
       { name: 'Dark Walnut', hex: '#4B3621' },
       { name: 'Smoked Ash', hex: '#3B3A36' }
     ],
-    image: '/images/prod-teak-dining.jpg',
+    image: assetUrl('/images/prod-teak-dining.jpg'),
     gallery: [
-      '/images/prod-teak-dining.jpg',
-      '/images/cat-meja.jpg',
-      '/images/hero-bg.jpg'
+      assetUrl('/images/prod-teak-dining.jpg'),
+      assetUrl('/images/cat-meja.jpg'),
+      assetUrl('/images/hero-bg.jpg')
     ],
     description: 'Meja makan berkapasitas 8-10 orang dengan daun meja satu bentangan kayu jati solid tebal 4 cm. Menampilkan keindahan serat alami dan tepian live-edge halus yang dipadu dengan kaki baja industrial minimalis.',
     features: [
@@ -104,11 +105,11 @@ export const PRODUCTS: Product[] = [
       { name: 'Emerald Velvet', hex: '#1B4D3E' },
       { name: 'Ivory Cream', hex: '#F0ECE1' }
     ],
-    image: '/images/prod-velvet-sofa.jpg',
+    image: assetUrl('/images/prod-velvet-sofa.jpg'),
     gallery: [
-      '/images/prod-velvet-sofa.jpg',
-      '/images/cat-sofa.jpg',
-      '/images/col-modern.jpg'
+      assetUrl('/images/prod-velvet-sofa.jpg'),
+      assetUrl('/images/cat-sofa.jpg'),
+      assetUrl('/images/col-modern.jpg')
     ],
     description: 'Sofa modular dengan kedalaman dudukan ekstra luas yang mengundang kenyamanan maksimal. Dibalut material velvet premium dengan jahitan ganda yang presisi dan mewah.',
     features: [
@@ -143,10 +144,10 @@ export const PRODUCTS: Product[] = [
       { name: 'American Walnut', hex: '#634E3A' },
       { name: 'Natural Sungkai', hex: '#D2B48C' }
     ],
-    image: '/images/prod-walnut-credenza.jpg',
+    image: assetUrl('/images/prod-walnut-credenza.jpg'),
     gallery: [
-      '/images/prod-walnut-credenza.jpg',
-      '/images/cat-lemari.jpg'
+      assetUrl('/images/prod-walnut-credenza.jpg'),
+      assetUrl('/images/cat-lemari.jpg')
     ],
     description: 'Credenza serbaguna dengan pintu slatted vertikal bertekstur modern. Dilengkapi 3 kompartemen luas dan rel soft-close premium impor dari Austria.',
     features: [
@@ -181,10 +182,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Natural Teak & Sand Linen', hex: '#C2B29D' },
       { name: 'Dark Oak & Slate Gray', hex: '#4A4A4A' }
     ],
-    image: '/images/prod-zenith-bed.jpg',
+    image: assetUrl('/images/prod-zenith-bed.jpg'),
     gallery: [
-      '/images/prod-zenith-bed.jpg',
-      '/images/cat-tempat-tidur.jpg'
+      assetUrl('/images/prod-zenith-bed.jpg'),
+      assetUrl('/images/cat-tempat-tidur.jpg')
     ],
     description: 'Dipan tempat tidur tipe king size (180x200cm) berkonsep low-platform melayang dengan headboard berlapis kain linen empuk untuk kenyamanan membaca sebelum tidur.',
     features: [
@@ -219,10 +220,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Raw Teak & Cast Iron', hex: '#3E342B' },
       { name: 'Full Noir Black', hex: '#1A1A1A' }
     ],
-    image: '/images/prod-apex-desk.jpg',
+    image: assetUrl('/images/prod-apex-desk.jpg'),
     gallery: [
-      '/images/prod-apex-desk.jpg',
-      '/images/cat-kantor.jpg'
+      assetUrl('/images/prod-apex-desk.jpg'),
+      assetUrl('/images/cat-kantor.jpg')
     ],
     description: 'Meja eksekutif premium yang dirancang untuk produktivitas level tinggi. Menggabungkan kayu jati solid hangat dengan inlay kulit asli di area kerja laptop dan dock pengisian nirkabel tersembunyi.',
     features: [
@@ -257,10 +258,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Carrara White Vein', hex: '#EAEAEA' },
       { name: 'Nero Marquina Black', hex: '#2B2B2B' }
     ],
-    image: '/images/prod-marble-coffee.jpg',
+    image: assetUrl('/images/prod-marble-coffee.jpg'),
     gallery: [
-      '/images/prod-marble-coffee.jpg',
-      '/images/cat-meja.jpg'
+      assetUrl('/images/prod-marble-coffee.jpg'),
+      assetUrl('/images/cat-meja.jpg')
     ],
     description: 'Meja kopi elegan dengan lempeng marmer alam bermotif urat abu-abu mewah. Setiap unit memiliki pola marmer unik ciptaan alam yang tidak akan pernah sama persis.',
     features: [
@@ -295,10 +296,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Forest Green & Brass', hex: '#1E352F' },
       { name: 'Charcoal Black & Teak', hex: '#1E1E1E' }
     ],
-    image: '/images/prod-bespoke-kitchen.jpg',
+    image: assetUrl('/images/prod-bespoke-kitchen.jpg'),
     gallery: [
-      '/images/prod-bespoke-kitchen.jpg',
-      '/images/cat-kitchen-set.jpg'
+      assetUrl('/images/prod-bespoke-kitchen.jpg'),
+      assetUrl('/images/cat-kitchen-set.jpg')
     ],
     description: 'Kitchen island kustom yang menjadi pusat keindahan dapur modern. Dilengkapi rak penyimpanan bumbu tersembunyi, rak anggur terintegrasi, serta overhang 30 cm untuk bar stool.',
     features: [
@@ -333,10 +334,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Natural Honey', hex: '#C89D68' },
       { name: 'Espresso Deep', hex: '#3B2F2F' }
     ],
-    image: '/images/cat-meja.jpg',
+    image: assetUrl('/images/cat-meja.jpg'),
     gallery: [
-      '/images/cat-meja.jpg',
-      '/images/hero-furniture.jpg'
+      assetUrl('/images/cat-meja.jpg'),
+      assetUrl('/images/hero-furniture.jpg')
     ],
     description: 'Meja konsol ramping dengan 2 laci penyimpanan rahasia yang pas untuk area foyer, koridor masuk rumah, atau meja hias ruang keluarga. Konstruksi pasak kayu presisi tanpa goyang.',
     features: [
@@ -371,10 +372,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Rustic Natural & Black', hex: '#40352A' },
       { name: 'All Black Noir', hex: '#1C1C1C' }
     ],
-    image: '/images/col-industrial.jpg',
+    image: assetUrl('/images/col-industrial.jpg'),
     gallery: [
-      '/images/col-industrial.jpg',
-      '/images/cat-kursi.jpg'
+      assetUrl('/images/col-industrial.jpg'),
+      assetUrl('/images/cat-kursi.jpg')
     ],
     description: 'Stool bar kokoh dengan dudukan kayu jati berkontur ergonomis yang nyaman diduduki berjam-jam. Rangka besi hollow dengan finishing powder coating hitam doff anti karat.',
     features: [
@@ -409,10 +410,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Salak Brown Classic', hex: '#4A2E18' },
       { name: 'Golden Teak Wax', hex: '#946638' }
     ],
-    image: '/images/col-klasik.jpg',
+    image: assetUrl('/images/col-klasik.jpg'),
     gallery: [
-      '/images/col-klasik.jpg',
-      '/images/cat-lemari.jpg'
+      assetUrl('/images/col-klasik.jpg'),
+      assetUrl('/images/cat-lemari.jpg')
     ],
     description: 'Lemari pakaian megah dengan mahkota ukiran halus khas sentra kayu Jawa Timur. Memiliki ruang gantungan baju panjang, 4 sekat rak pakaian lipat, serta 2 laci bawah berkunci.',
     features: [
@@ -447,10 +448,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Bleached Hygge', hex: '#E2DAC8' },
       { name: 'Natural Warm Teak', hex: '#A87948' }
     ],
-    image: '/images/proj-villa-bali.jpg',
+    image: assetUrl('/images/proj-villa-bali.jpg'),
     gallery: [
-      '/images/proj-villa-bali.jpg',
-      '/images/cat-tempat-tidur.jpg'
+      assetUrl('/images/proj-villa-bali.jpg'),
+      assetUrl('/images/cat-tempat-tidur.jpg')
     ],
     description: 'Rangka tempat tidur model empat tiang kanopi yang menghadirkan nuansa resort tropis di kamar tidur Anda. Dibuat dari balok kayu jati solid tanpa sambungan tipis.',
     features: [
@@ -486,10 +487,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Midnight Navy Blue', hex: '#1E293B' },
       { name: 'Warm Desert Sand', hex: '#D6C7A8' }
     ],
-    image: '/images/hero-furniture.jpg',
+    image: assetUrl('/images/hero-furniture.jpg'),
     gallery: [
-      '/images/hero-furniture.jpg',
-      '/images/cat-sofa.jpg'
+      assetUrl('/images/hero-furniture.jpg'),
+      assetUrl('/images/cat-sofa.jpg')
     ],
     description: 'Sofa 2-seater dengan siluet melengkung modern dan kain pelapis velvet bertekstur mewah. Dudukan empuk berkepadatan tinggi menjamin kenyamanan santai bersama keluarga.',
     features: [
@@ -524,10 +525,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Pale Nordic Sand', hex: '#EBE2D0' },
       { name: 'Natural Warm Ash', hex: '#CBBBA0' }
     ],
-    image: '/images/cat-lemari.jpg',
+    image: assetUrl('/images/cat-lemari.jpg'),
     gallery: [
-      '/images/cat-lemari.jpg',
-      '/images/prod-walnut-credenza.jpg'
+      assetUrl('/images/cat-lemari.jpg'),
+      assetUrl('/images/prod-walnut-credenza.jpg')
     ],
     description: 'Lemari pajangan vertikal terbuka dengan 5 kompartemen asimetris untuk koleksi buku, piala, dan ornamen estetik. Serat kayu sungkai yang terang memberi kesan ruangan lebih lapang.',
     features: [
@@ -562,10 +563,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Executive Walnut', hex: '#38281E' },
       { name: 'Royal Teak Noir', hex: '#241D17' }
     ],
-    image: '/images/cat-kantor.jpg',
+    image: assetUrl('/images/cat-kantor.jpg'),
     gallery: [
-      '/images/cat-kantor.jpg',
-      '/images/proj-office.jpg'
+      assetUrl('/images/cat-kantor.jpg'),
+      assetUrl('/images/proj-office.jpg')
     ],
     description: 'Meja kerja prestisius untuk ruang pimpinan kantor dan studio arsitektur. Mengusung bidang luas 2 meter dengan laci berkunci sentral serta manajemen kabel listrik tersembunyi.',
     features: [
@@ -600,10 +601,10 @@ export const PRODUCTS: Product[] = [
       { name: 'Warm Cream White', hex: '#F4EFEB' },
       { name: 'Earthy Sage Green', hex: '#879782' }
     ],
-    image: '/images/cat-kitchen-set.jpg',
+    image: assetUrl('/images/cat-kitchen-set.jpg'),
     gallery: [
-      '/images/cat-kitchen-set.jpg',
-      '/images/prod-bespoke-kitchen.jpg'
+      assetUrl('/images/cat-kitchen-set.jpg'),
+      assetUrl('/images/prod-bespoke-kitchen.jpg')
     ],
     description: 'Kabinet dapur atas model gantung dengan pintu kaca bergaris (fluted glass) modern. Menghilangkan kesan dapur sempit dan memudahkan menyimpan piring serta cangkir bersih.',
     features: [

@@ -1,4 +1,5 @@
 import { Category } from '../types';
+import { assetUrl } from '../utils/asset';
 
 export const CATEGORIES: Category[] = [
   {
@@ -6,7 +7,7 @@ export const CATEGORIES: Category[] = [
     name: 'Meja & Konsol',
     slug: 'meja',
     description: 'Meja makan kayu jati solid, meja kerja presisi, konsol foyer, dan coffee table marmer.',
-    image: '/images/cat-meja.jpg',
+    image: assetUrl('/images/cat-meja.jpg'),
     itemCount: 18
   },
   {
@@ -14,7 +15,7 @@ export const CATEGORIES: Category[] = [
     name: 'Kursi & Armchair',
     slug: 'kursi',
     description: 'Kursi santai ergonomis, dining chair kayu lengkung, lounge chair, dan bangku aksen.',
-    image: '/images/cat-kursi.jpg',
+    image: assetUrl('/images/cat-kursi.jpg'),
     itemCount: 24
   },
   {
@@ -22,7 +23,7 @@ export const CATEGORIES: Category[] = [
     name: 'Sofa & Daybed',
     slug: 'sofa',
     description: 'Sofa modular kontemporer, sectional velvet, loveseat, dan daybed kayu berbalut linen.',
-    image: '/images/cat-sofa.jpg',
+    image: assetUrl('/images/cat-sofa.jpg'),
     itemCount: 15
   },
   {
@@ -30,7 +31,7 @@ export const CATEGORIES: Category[] = [
     name: 'Lemari & Credenza',
     slug: 'lemari',
     description: 'Walk-in wardrobe kustom, credenza buffet, rak buku arsitektural, dan kabinet TV gantung.',
-    image: '/images/cat-lemari.jpg',
+    image: assetUrl('/images/cat-lemari.jpg'),
     itemCount: 16
   },
   {
@@ -38,7 +39,7 @@ export const CATEGORIES: Category[] = [
     name: 'Tempat Tidur',
     slug: 'tempat-tidur',
     description: 'Dipan platform kayu solid, headboard empuk berlapis linen, dan set nakas kamar tidur mewah.',
-    image: '/images/cat-tempat-tidur.jpg',
+    image: assetUrl('/images/cat-tempat-tidur.jpg'),
     itemCount: 12
   },
   {
@@ -46,7 +47,7 @@ export const CATEGORIES: Category[] = [
     name: 'Kitchen Set & Bar',
     slug: 'kitchen-set',
     description: 'Dapur pulau bespoke, kabinet dapur HPL & duco tahan lembab, dan mini bar elegan.',
-    image: '/images/cat-kitchen-set.jpg',
+    image: assetUrl('/images/cat-kitchen-set.jpg'),
     itemCount: 14
   },
   {
@@ -54,7 +55,7 @@ export const CATEGORIES: Category[] = [
     name: 'Furniture Kantor',
     slug: 'furniture-kantor',
     description: 'Meja direksi eksekutif, meja meeting panjang akustik, dan rak arsip modern minimalis.',
-    image: '/images/cat-kantor.jpg',
+    image: assetUrl('/images/cat-kantor.jpg'),
     itemCount: 11
   }
 ];

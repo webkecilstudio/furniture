@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { assetUrl } from '../../utils/asset';
 import { 
   FaWhatsapp, 
   FaMapMarkerAlt, 
@@ -118,7 +119,7 @@ export const Footer: React.FC = () => {
 
           {/* Mandatory Webkecil Studio Creator Attribution */}
           <div className="flex items-center gap-3 bg-[#171717] px-4 py-2 border border-[#333333]">
-            <img src="/webkecilstudio.png" alt="Webkecil Studio" className="w-5 h-5 object-contain" />
+            <img src={assetUrl('/webkecilstudio.png')} alt="Webkecil Studio" className="w-5 h-5 object-contain" />
             <div className="text-[11px]">
               <span className="text-[#A3A3A3]">Created by </span>
               <strong className="text-[#FAFAFA] tracking-wide">Webkecil Studio</strong>

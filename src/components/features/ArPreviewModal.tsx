@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Product } from '../../types';
 import { FaTimes, FaCamera, FaExpandArrowsAlt, FaUndo, FaCheck, FaMobileAlt } from 'react-icons/fa';
+import { assetUrl } from '../../utils/asset';
 
 interface ArPreviewModalProps {
   product: Product | null;
@@ -86,7 +87,7 @@ export const ArPreviewModal: React.FC<ArPreviewModalProps> = ({ product, onClose
           ) : (
             <div className="absolute inset-0">
               <img
-                src="/images/hero-bg.jpg"
+                src={assetUrl('/images/hero-bg.jpg')}
                 alt="Room Simulation"
                 className="w-full h-full object-cover filter brightness-75"
               />

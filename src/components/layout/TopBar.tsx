@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaWhatsapp, FaExternalLinkAlt } from 'react-icons/fa';
+import { assetUrl } from '../../utils/asset';
 
 export const TopBar: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ export const TopBar: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-[#FAFAFA] hover:text-[#EF4444] transition-colors"
           >
-            <img src="/webkecilstudio.png" alt="Webkecil Studio" className="w-3.5 h-3.5 object-contain inline" />
+            <img src={assetUrl('/webkecilstudio.png')} alt="Webkecil Studio" className="w-3.5 h-3.5 object-contain inline" />
             <span className="hidden xs:inline text-[#A3A3A3]">Created by </span>
             <strong className="underline underline-offset-2">Webkecil Studio</strong>
             <FaExternalLinkAlt className="text-[8px] text-[#A3A3A3]" />

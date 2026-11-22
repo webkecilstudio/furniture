@@ -3,6 +3,7 @@ import { PRODUCTS } from '../../data/products';
 import { Product } from '../../types';
 import { useShop } from '../../context/ShopContext';
 import { FaTimes, FaUndo, FaPlus, FaCheck, FaShoppingBag, FaPalette } from 'react-icons/fa';
+import { assetUrl } from '../../utils/asset';
 
 interface RoomVisualizerModalProps {
   onClose: () => void;
@@ -12,10 +13,10 @@ export const RoomVisualizerModal: React.FC<RoomVisualizerModalProps> = ({ onClos
   const { addToCart } = useShop();
 
   const rooms = [
-    { id: 'living', name: 'Living Room (Ruang Tamu)', bg: '/images/col-modern.jpg' },
-    { id: 'dining', name: 'Dining Space (Ruang Makan)', bg: '/images/col-minimalis.jpg' },
-    { id: 'bedroom', name: 'Master Bedroom (Kamar Tidur)', bg: '/images/col-scandinavian.jpg' },
-    { id: 'office', name: 'Executive Office (Ruang Kerja)', bg: '/images/col-industrial.jpg' }
+    { id: 'living', name: 'Living Room (Ruang Tamu)', bg: assetUrl('/images/col-modern.jpg') },
+    { id: 'dining', name: 'Dining Space (Ruang Makan)', bg: assetUrl('/images/col-minimalis.jpg') },
+    { id: 'bedroom', name: 'Master Bedroom (Kamar Tidur)', bg: assetUrl('/images/col-scandinavian.jpg') },
+    { id: 'office', name: 'Executive Office (Ruang Kerja)', bg: assetUrl('/images/col-industrial.jpg') }
   ];
 
   const [activeRoom, setActiveRoom] = useState(rooms[0]);

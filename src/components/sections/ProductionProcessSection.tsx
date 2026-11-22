@@ -1,5 +1,6 @@
-﻿import React from 'react';
+import React from 'react';
 import { FaComments, FaDraftingCompass, FaTree, FaTools, FaSprayCan, FaTruck } from 'react-icons/fa';
+import { assetUrl } from '../../utils/asset';
 
 export const ProductionProcessSection: React.FC = () => {
   const steps = [
@@ -8,7 +9,7 @@ export const ProductionProcessSection: React.FC = () => {
       title: 'Konsultasi & Penyelarasan Konsep',
       subtitle: 'Memahami Ruang & Gaya Hidup',
       desc: 'Sesi diskusi intensif seputar kebutuhan ruang, preferensi estetika (minimalis, Japandi, modern), denah dimensi ruangan, dan batasan anggaran.',
-      image: '/images/proc-consultation.jpg',
+      image: assetUrl('/images/proc-consultation.jpg'),
       icon: <FaComments />
     },
     {
@@ -16,7 +17,7 @@ export const ProductionProcessSection: React.FC = () => {
       title: 'Sketsa 3D & Pemilihan Kayu Kiln-Dry',
       subtitle: 'Gambar Kerja & Seleksi Log Jati',
       desc: 'Pembuatan gambar visualisasi 3D presisi dan seleksi balok kayu jati Perhutani dengan kadar air terukur 10-12% lewat oven kiln-dry.',
-      image: '/images/proc-material.jpg',
+      image: assetUrl('/images/proc-material.jpg'),
       icon: <FaTree />
     },
     {
@@ -24,7 +25,7 @@ export const ProductionProcessSection: React.FC = () => {
       title: 'Konstruksi Kriya Purus & Presisi Mesin',
       subtitle: 'Ketelitian Tukang Senior Jepara',
       desc: 'Pemotongan dan perakitan rangka dengan sambungan purus (tenon & mortise). Sambungan kayu saling mengunci kuat tanpa celah baut.',
-      image: '/images/proc-crafting.jpg',
+      image: assetUrl('/images/proc-crafting.jpg'),
       icon: <FaTools />
     },
     {
@@ -32,7 +33,7 @@ export const ProductionProcessSection: React.FC = () => {
       title: 'Amplas Halus & Multi-Layer Finishing',
       subtitle: 'Perlindungan & Kelembutan Sentuhan',
       desc: 'Pengamplasan tangan bertingkat hingga grid 400 dan aplikasi pelapis polyurethane / melamin 5 layer non-toxic tahan panas dan noda.',
-      image: '/images/proc-finishing.jpg',
+      image: assetUrl('/images/proc-finishing.jpg'),
       icon: <FaSprayCan />
     },
     {
@@ -40,7 +41,7 @@ export const ProductionProcessSection: React.FC = () => {
       title: 'Quality Control & Packing Peti Kayu',
       subtitle: 'Verifikasi Mutu & Perlindungan Kargo',
       desc: 'Pemeriksaan struktural beban, kehalusan sambungan, dan fungsi fitting sebelum dilapisi foam tebal dan dipeti kayu solid.',
-      image: '/images/about-workshop.jpg',
+      image: assetUrl('/images/about-workshop.jpg'),
       icon: <FaDraftingCompass />
     },
     {
@@ -48,7 +49,7 @@ export const ProductionProcessSection: React.FC = () => {
       title: 'Pengiriman & Instalasi Lokasi',
       subtitle: 'White-Glove Delivery & Garansi 5 Tahun',
       desc: 'Armada kami mengantar langsung ke ruangan Anda, dirakit oleh teknisi resmi, dibersihkan rapi, dan kartu garansi diserahterimakan.',
-      image: '/images/proj-villa-bali.jpg',
+      image: assetUrl('/images/proj-villa-bali.jpg'),
       icon: <FaTruck />
     }
   ];

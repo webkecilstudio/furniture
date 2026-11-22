@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCompass, FaCheck, FaDraftingCompass, FaTree } from 'react-icons/fa';
+import { assetUrl } from '../../utils/asset';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ export const AboutSection: React.FC = () => {
             <div className="border-2 border-[#0A0A0A] bg-[#0A0A0A] p-2">
               <div className="aspect-[4/3] overflow-hidden bg-[#1F1F1F]">
                 <img
-                  src="/images/about-workshop.jpg"
+                  src={assetUrl('/images/about-workshop.jpg')}
                   alt="Workshop PorosKayu Furniture"
                   className="w-full h-full object-cover contrast-110"
                 />

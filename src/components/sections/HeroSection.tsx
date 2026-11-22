@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useShop } from '../../context/ShopContext';
 import { FaArrowRight, FaWhatsapp, FaCube, FaShieldAlt, FaAward } from 'react-icons/fa';
+import { assetUrl } from '../../utils/asset';
 
 export const HeroSection: React.FC = () => {
   const navigate = useNavigate();
@@ -95,7 +96,7 @@ export const HeroSection: React.FC = () => {
             <div className="border-2 border-[#0A0A0A] bg-[#0A0A0A] p-2 relative group">
               <div className="relative overflow-hidden bg-[#262626] aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5]">
                 <img
-                  src="/images/hero-bg.jpg"
+                  src={assetUrl('/images/hero-bg.jpg')}
                   alt="PorosKayu Signature Living Space"
                   className="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700"
                 />

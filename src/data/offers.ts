@@ -1,4 +1,5 @@
-﻿import { SpecialOfferItem } from '../types';
+import { SpecialOfferItem } from '../types';
+import { assetUrl } from '../utils/asset';
 
 export const SPECIAL_OFFERS: SpecialOfferItem[] = [
   {
@@ -9,7 +10,7 @@ export const SPECIAL_OFFERS: SpecialOfferItem[] = [
     discount: 'Hemat 22%',
     promoCode: 'PorosKayu-LIVING',
     validUntil: '31 Desember 2026',
-    image: '/images/hero-bg.jpg',
+    image: assetUrl('/images/hero-bg.jpg'),
     itemsIncluded: [
       '1x Velvet Noir Modular 3-Seater Sofa',
       '1x Nordic Lounge Armchair (Kayu Jati)',
@@ -27,7 +28,7 @@ export const SPECIAL_OFFERS: SpecialOfferItem[] = [
     discount: 'Hemat Rp 4.5 Juta',
     promoCode: 'PorosKayu-DINING',
     validUntil: '15 Januari 2027',
-    image: '/images/prod-teak-dining.jpg',
+    image: assetUrl('/images/prod-teak-dining.jpg'),
     itemsIncluded: [
       '1x Sovereign Solid Teak Dining Table (220 x 95 cm)',
       '6x Minimalist Ergonomic Teak Dining Chairs',

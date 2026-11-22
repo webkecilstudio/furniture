@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaWhatsapp, FaTimes } from 'react-icons/fa';
+import { assetUrl } from '../../utils/asset';
 
 export const CreatedByBadge: React.FC = () => {
   const [minimized, setMinimized] = useState(false);
@@ -11,7 +12,7 @@ export const CreatedByBadge: React.FC = () => {
         className="fixed bottom-20 left-4 z-40 bg-[#0A0A0A] text-[#FAFAFA] border-2 border-[#0A0A0A] px-2.5 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider flex items-center gap-2 hover:bg-[#EF4444] transition-colors"
         title="Created by Webkecil Studio"
       >
-        <img src="/webkecilstudio.png" alt="Logo" className="w-4 h-4 object-contain" />
+        <img src={assetUrl('/webkecilstudio.png')} alt="Logo" className="w-4 h-4 object-contain" />
         <span className="hidden sm:inline">Webkecil Studio</span>
       </button>
     );
@@ -21,7 +22,7 @@ export const CreatedByBadge: React.FC = () => {
     <div className="fixed bottom-20 left-4 z-40 bg-[#FAFAFA] text-[#0A0A0A] border-2 border-[#0A0A0A] p-3 max-w-[280px] shadow-none hidden sm:block animate-in fade-in duration-300">
       <div className="flex items-center justify-between border-b-2 border-[#0A0A0A] pb-1.5 mb-2">
         <div className="flex items-center gap-2">
-          <img src="/webkecilstudio.png" alt="Webkecil Studio" className="w-5 h-5 object-contain" />
+          <img src={assetUrl('/webkecilstudio.png')} alt="Webkecil Studio" className="w-5 h-5 object-contain" />
           <span className="text-[11px] font-bold uppercase font-mono tracking-wider">
             Webkecil Studio
           </span>
